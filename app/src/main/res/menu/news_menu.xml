@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuitem_attach_photo" android:title="@string/menuitem_photo_string"/>
+    <item android:id="@+id/menuitem_attach_audio" android:title="@string/menuitem_audio_string"/>
+    <item android:id="@+id/menuitem_attach_video" android:title="@string/menuitem_video_string"/>
+    <item android:id="@+id/menuitem_clean_news" android:title="@string/menuitem_clear_news_string"/>
+</menu>

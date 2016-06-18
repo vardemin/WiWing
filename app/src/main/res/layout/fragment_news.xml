@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.vardemin.wiwing.WiNewsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/news_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_above="@+id/news_post_section">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/news_post_section"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteTransparent"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp">
+                <LinearLayout
+                    android:id="@+id/news_linear"
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/news_button">
+                    <EditText
+                        android:id="@+id/news_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Header..."
+                        android:inputType="textShortMessage"
+                        android:singleLine="true" />
+                    <EditText
+                        android:id="@+id/news_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:hint="I`m going for a walk..." />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/news_button"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/post_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/news_linear"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>
